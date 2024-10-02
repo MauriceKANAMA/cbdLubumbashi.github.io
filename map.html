@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Encodage du site -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Balise ajoutant le texte qui sont relatif a l'affichage sur google -->
+        <meta name="description" content="Le CBD de la ville de Lubumbashi">
+
+        <!-- Titre de la page -->
+        <title>Cartographie du Central Business District De Lubumbashi</title>
+
+        <!-- Liaison avec nos feuilles CSS et JavaScript -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/leaflet.css">
+
+        <!-- Liaison avec les styles et codes Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+        <!-- PLUGINS LEAFLET -->
+        <!-- Mesure lineaire -->        
+        <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css"/>
+        <script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+
+        <!-- Mesure polygonale -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+        <link rel="stylesheet" href="https://prominentedge.com/leaflet-measure-path/leaflet-measure-path.css" />
+        <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+        <script src="https://npmcdn.com/leaflet-editable@0.6.2/src/Leaflet.Editable.js" ></script>
+        <script src="https://prominentedge.com/leaflet-measure-path/leaflet-measure-path.js"></script>
+        <script src="js/leaflet.MeasurePolygon.js"></script>        
+
+        <!-- Recherche -->
+        <link rel="stylesheet" href="css/leaflet-search.src.css">
+        <script src="js/leaflet-search.src.js"></script>
+
+        <!-- Geoserver link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/L.Geoserver.js"></script>
+
+        <!-- Affiche de la position de la souris en coordonees -->
+        <link rel="stylesheet" href="css/Leaflet.Coordinates-0.1.5.css">
+        <link rel="stylesheet" href="css/Leaflet.Coordinates-0.1.5.ie.css">
+        <script src="js/Leaflet.Coordinates-0.1.5.src.js"></script>
+        <script src="js/NumberFormatter.js"></script>
+        
+
+    </head>
+    <body>
+
+        <header>
+            <p id="logo">CBD Lubumbashi</p>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="map.html">Cartographie</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                </ul>
+            </nav>
+        </header>
+  
+        <div id="map"></div>
+
+        
+        <footer>
+            <p>
+                &copy; Copyright 2024 All rights reserved
+            </p>
+        </footer>
+
+        
+        <!-- Liaison avec les codes JavaScript -->
+        <script src="js/leaflet.js"></script>
+
+    </body>
+</html>

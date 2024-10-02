@@ -1,0 +1,115 @@
+/* La page entiere */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* En-tete de la page */
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 30px;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: 30px 30px;
+    background: rgba(245, 243, 243, 0.705);
+    display: flex;
+    justify-content:space-between;
+    z-index: 100;
+}
+
+/* .logo{
+    position: absolute;
+    top: 3px;
+    left: 40px;
+    height: 50px;
+} */
+
+#logo{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul{
+    float: left;
+    list-style-type: none; /* Mieux vaut utiliser celui-ci parce qu'il passe mieux */
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li{
+    float: left;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+/* Le corps de la page */
+
+main{
+    position: absolute;
+    top: 11%;
+}
+
+.main-title{
+    text-align: center;
+    font-family: "Century Gotic", Arial, Helvetica, sans-serif;
+}
+
+.cbd{
+    padding: 0px 15% 0px 15%;
+    text-align:justify;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+    header{
+        height: 20px;
+    }
+    nav li a{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 2px;
+        margin-left: 15px;
+    }
+    #logo{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+}
+/* Pieds de page */
+
+footer{
+    position: absolute;
+    top: 92%;
+    padding-top: 15px;
+    border-top: 1px solid;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(98, 94, 110, 0.1);
+}
